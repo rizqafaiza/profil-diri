@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    justify-items: center;
+    background-color: #6d8196;
+}
+
+.container{
+    width: 50%;
+    background-color: #cbcbcb;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    background-color: #ffffe3;
+    padding: 10px;
+    width: 49.5vw;
+    z-index: 999;
+}
+
+nav a{
+    border: 2px solid #4a4a4a;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 1.0;
+    background-color: aliceblue;
+}
+
+nav a:hover{
+    opacity: 0.7;
+}
+
+h1{
+    background-color: #4a4a4a;
+    color: #ffffe3;
+    padding: 5px;
+    text-align: center;
+}
+
+.tentang{
+    background-color: #cbcbcb;
+    padding: 20px;
+}
+
+.tentang img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.tentang .card{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    background-color: #ffffe3;
+    opacity: 0.85;
+    border:2px solid #4a4a4a;
+    border-radius: 10px;
+}
+
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.skill div{
+    background-color: #ffffe3;
+    border-radius: 10px;
+    border: 2px solid #4a4a4a;
+    width: 550px;
+    height: 270px;
+    padding: 5px;
+}
+
+hr{
+    border: 2px solid #ffffe3;
+}
+
+.porto{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #ffffe3;
+    border: 2px solid #4a4a4a;
+    text-align: center;
+    margin: 5px;
+    border-radius: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.kontak{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.email{
+    display: flex;
+    background-color: #ffffe3;
+    border: 2px solid #4a4a4a;
+    border-radius: 20px;
+    opacity: 1.0;
+}
+
+.email a{
+    background: none;
+    border: none;
+    color: black;
+}
+
+.email img{
+    width: 35px;
+    height: 35px;
+}
+
+.email:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width:780px){
+    .container{
+        width: 100%;
+    }
+
+    .tentang .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tentang p{
+        font-size: 20px;
+    }
+
+    nav{
+        width: 100%;
+        padding: 5px;
+        padding-bottom: 10px;
+        gap: 5px;
+    }
+
+    nav a{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .skill div{
+        font-size: 20px;
+    }
+
+    a{
+        font-size: 20px;
+    }
+}
